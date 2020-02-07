@@ -36,6 +36,11 @@ TARGET_SCREEN_WIDTH := 1080
 
 # Crypto
 TARGET_HW_DISK_ENCRYPTION := true
+TARGET_GESTURES_NODE := "/proc/touchpanel/gesture_enable"
+
+# FM
+BOARD_HAS_QCA_FM_SOC := cherokee
+BOARD_HAVE_QCOM_FM := true
 
 # Display
 TARGET_SCREEN_DENSITY := 420
@@ -51,6 +56,9 @@ BOARD_VENDORIMAGE_PARTITION_SIZE := 838860800
 
 # Recovery
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
+
+# Power
+TARGET_USES_NON_LEGACY_POWERHAL := true
 
 # Security patch level
 VENDOR_SECURITY_PATCH := 2018-11-01
