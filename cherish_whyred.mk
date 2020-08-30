@@ -24,12 +24,10 @@ $(call inherit-product, vendor/cherish/config/common_full_phone.mk)
 
 # Inherit from whyred device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
-#TARGET_GAPPS_ARCH := arm64
+TARGET_GAPPS_ARCH := arm64
 TARGET_BOOT_ANIMATION_RES := 1080
 export CHERISH_BUILD_TYPE:= OFFICIAL
 $(call inherit-product, vendor/xiaomi/MiuiCamera/config.mk)
-# Vanilla
-CHERISH_NOGAPPS=true
 
 # Maintainer
 PRODUCT_PROPERTY_OVERRIDES += \
