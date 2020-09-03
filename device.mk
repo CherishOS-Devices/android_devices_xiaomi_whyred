@@ -77,7 +77,7 @@ PRODUCT_PACKAGES += \
 # USB
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.0-service.basic
-=======
+
 # Watermark
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/MIUI_DualCamera_watermark.png:$(TARGET_COPY_OUT_VENDOR)/etc/MIUI_DualCamera_watermark.png
@@ -89,6 +89,10 @@ PRODUCT_PACKAGES += \
 # XiaomiDoze
 PRODUCT_PACKAGES += \
     XiaomiDoze
+
+# LiveDisplay
+PRODUCT_PACKAGES += \
+    vendor.lineage.livedisplay@2.0-service-sdm
 
 # Inherit proprietary files
 $(call inherit-product-if-exists, vendor/xiaomi/whyred/whyred-vendor.mk)
